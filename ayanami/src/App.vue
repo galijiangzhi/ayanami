@@ -1,10 +1,15 @@
 <script>
 import Start from './start.vue'
 
+
 export default {
   data(){
     return{
       body_class:"body_div",
+      color:{
+        background:"#462a5b",
+        font:"#27801B"
+      }
     }
   },
   components: {
@@ -17,7 +22,4 @@ export default {
   <Start />
 </template>
 <style>
-  .app{
-    background-color: red;
-  }
 </style>

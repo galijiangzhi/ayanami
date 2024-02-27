@@ -7,11 +7,15 @@
         <div :style="index_style">
             <Index />
         </div>
+        <div class="header_web_style" :style="style_style">
+            <web_Style />
+        </div>
     </div>
 </template>
 <script>
     import Logo from './head/logo.vue'
     import Index from './head/index.vue'
+    import web_Style from './head/web_style.vue'
 import Head from './head/index.vue';
     export default{
         data(){
@@ -32,14 +36,20 @@ import Head from './head/index.vue';
                     display:"flex",
                     height:"80px",
                     marginRight: "40px"
+                },
+                style_style:{
+                    position:"absolute",
+                    top:"80px",
+                    right:"0px"
                 }
             }
         },
         components:{
-    Logo,
-    Index,
-    Head
-}
+            Logo,
+            Index,
+            Head,
+            web_Style
+        }
     }
 </script>
 <style>
