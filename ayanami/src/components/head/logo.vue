@@ -5,13 +5,13 @@
         </g>
     </svg>
     <h1>Ikari</h1>
-    <span></span>
+    <span>這時只要微笑就可以了</span>
 </template>
 <script>
     export default{
         data(){
             return{
-                logo_fill:"#462a5b",
+                logo_fill:"#fb581f",
                 logo_style:{
                     margin:"4px"
                 }
@@ -24,8 +24,16 @@
         font-family: "PTMono", "Courier New", monospace;
         font-size: 40px;
         position:relative;
-        top:-100px;
+        top:-95px;
         left:80px;
-        color:#462a5b
+        color:#27801B
+    }
+    span{
+        font-family: "PTMono", "Courier New", monospace;
+        font-size: 1rem;
+        position:relative;
+        top:-130px;
+        left:80px;
+        color:#27801B
     }
 </style>
