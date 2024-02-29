@@ -25,3 +25,7 @@ export default {
 </template>
 <style>
 </style>
+<!-- 初号机
+紫色是#462A5B
+绿色网格是#1B1C1C 图案颜色#27801B
+黑色是#181818 -->

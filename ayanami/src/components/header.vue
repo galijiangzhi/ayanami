@@ -1,4 +1,6 @@
-<!-- 该文件用于构建主页的头部导航栏 -->
+ 、
+  6、
+  <!-- 该文件用于构建主页的头部导航栏 -->
 <template>
     <div :style="root_div_style">
         <div :class="header" :style=header_style>
