@@ -12,10 +12,17 @@
                 </path>
             </svg>
         </div>
+        <div :style="itemsize_style">
+            <snap :style="snap_style">Item Size</snap>
+            <div style="">
+                    <ItemSize />
+            </div>
+        </div>
     </div>
 </template>
 <script>
     import ThemeList from "./web_style/theme_list.vue"
+    import ItemSize from "./web_style/itemsize.vue"
     export default{
         data(){
             return{
@@ -24,7 +31,6 @@
                     width:"600px"
                 },
                 theme_style:{
-                    width:"190px",
                     height:"50px",
                     // backgroundColor:"black",
                     display:"flex",
@@ -46,15 +52,27 @@
                     padding: "3px",
                     borderRadius:"5px",
                     position:"relative",
-                    top:"5px",
+                    top:"6px",
                     border :`1px solid ${this.$root.$data.color.font}`
                 },
                 svg_fill:this.$root.$data.color.font,
-                options:['Dashy', 'Ayanami', 'Asuka']
+                options:['Dashy', 'Ayanami', 'Asuka'],
+                itemsize_style:{
+                    width:"93px",
+                    height:"51px",
+                    backgroundColor:"red",
+                    marginLeft:"10px"
+                }
             }
         },
         components:{
-            ThemeList
+            ThemeList,
+            ItemSize
         }
     }
 </script>
+<style scoped>
+    snap{
+        font-family: "Inconsolata", "Georgia", sans-serif;
+    }
+</style>

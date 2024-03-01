@@ -6,7 +6,7 @@
         data(){
             return{
                 a_class:"index_a",
-                index_list:["github链接","文档","联系本人"],
+                index_list:["github","文档","联系本人"],
                 a_style:{
                     height:"37px",
                     width:"80px",
