@@ -1,13 +1,13 @@
 <template>
     <div :style="svg_div_style">
-        <svg aria-hidden="true" data-prefix="fas" data-icon="table" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" tabindex="-2" class="svg-inline--fa fa-table fa-w-16 layout-icon selected" data-original-title="null" :style="pull_svg_style">
-            <path fill="currentColor" d="M464 32H48C21.49 32 0 53.49 0 80v352c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V80c0-26.51-21.49-48-48-48zM224 416H64v-96h160v96zm0-160H64v-96h160v96zm224 160H288v-96h160v96zm0-160H288v-96h160v96z"></path>
+        <svg aria-hidden="true" data-prefix="fas" data-icon="compress-arrows-alt" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" tabindex="-2" class="svg-inline--fa fa-compress-arrows-alt fa-w-16 layout-icon selected" data-original-title="null" :style="pull_svg_style">
+            <path d="M200 288H88c-21.4 0-32.1 25.8-17 41l32.9 31-99.2 99.3c-6.2 6.2-6.2 16.4 0 22.6l25.4 25.4c6.2 6.2 16.4 6.2 22.6 0L152 408l31.1 33c15.1 15.1 40.9 4.4 40.9-17V312c0-13.3-10.7-24-24-24zm112-64h112c21.4 0 32.1-25.9 17-41l-33-31 99.3-99.3c6.2-6.2 6.2-16.4 0-22.6L481.9 4.7c-6.2-6.2-16.4-6.2-22.6 0L360 104l-31.1-33C313.8 55.9 288 66.6 288 88v112c0 13.3 10.7 24 24 24zm96 136l33-31.1c15.1-15.1 4.4-40.9-17-40.9H312c-13.3 0-24 10.7-24 24v112c0 21.4 25.9 32.1 41 17l31-32.9 99.3 99.3c6.2 6.2 16.4 6.2 22.6 0l25.4-25.4c6.2-6.2 6.2-16.4 0-22.6L408 360zM183 71.1L152 104 52.7 4.7c-6.2-6.2-16.4-6.2-22.6 0L4.7 30.1c-6.2 6.2-6.2 16.4 0 22.6L104 152l-33 31.1C55.9 198.2 66.6 224 88 224h112c13.3 0 24-10.7 24-24V88c0-21.3-25.9-32-41-16.9z"></path>
         </svg>
-        <svg aria-hidden="true" data-prefix="fas" data-icon="th-list" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" tabindex="-2" class="svg-inline--fa fa-th-list fa-w-16 layout-icon  has-tooltip" data-original-title="null" :style="pull_svg_style">
-            <path  fill="currentColor" d="M149.333 216v80c0 13.255-10.745 24-24 24H24c-13.255 0-24-10.745-24-24v-80c0-13.255 10.745-24 24-24h101.333c13.255 0 24 10.745 24 24zM0 376v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H24c-13.255 0-24 10.745-24 24zM125.333 32H24C10.745 32 0 42.745 0 56v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24V56c0-13.255-10.745-24-24-24zm80 448H488c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24zm-24-424v80c0 13.255 10.745 24 24 24H488c13.255 0 24-10.745 24-24V56c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24zm24 264H488c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24z"></path>
+        <svg aria-hidden="true" data-prefix="fas" data-icon="expand" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" tabindex="-2" class="svg-inline--fa fa-expand fa-w-14 layout-icon " data-original-title="null" :style="pull_svg_style">
+            <path d="M0 180V56c0-13.3 10.7-24 24-24h124c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H64v84c0 6.6-5.4 12-12 12H12c-6.6 0-12-5.4-12-12zM288 44v40c0 6.6 5.4 12 12 12h84v84c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12V56c0-13.3-10.7-24-24-24H300c-6.6 0-12 5.4-12 12zm148 276h-40c-6.6 0-12 5.4-12 12v84h-84c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h124c13.3 0 24-10.7 24-24V332c0-6.6-5.4-12-12-12zM160 468v-40c0-6.6-5.4-12-12-12H64v-84c0-6.6-5.4-12-12-12H12c-6.6 0-12 5.4-12 12v124c0 13.3 10.7 24 24 24h124c6.6 0 12-5.4 12-12z"></path>
         </svg>
-        <svg  aria-hidden="true" data-prefix="fas" data-icon="columns" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" tabindex="-2" class="svg-inline--fa fa-columns fa-w-16 layout-icon  has-tooltip" data-original-title="null" aria-describedby="tooltip_z0zlzqp1jx" :style="pull_svg_style">
-            <path fill="currentColor" d="M464 32H48C21.49 32 0 53.49 0 80v352c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V80c0-26.51-21.49-48-48-48zM224 416H64V160h160v256zm224 0H288V160h160v256z"></path>
+        <svg aria-hidden="true" data-prefix="fas" data-icon="expand-arrows-alt" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" tabindex="-2" class="svg-inline--fa fa-expand-arrows-alt fa-w-14 layout-icon " data-original-title="null" :style="pull_svg_style">
+            <path d="M448 344v112a23.94 23.94 0 01-24 24H312c-21.39 0-32.09-25.9-17-41l36.2-36.2L224 295.6 116.77 402.9 153 439c15.09 15.1 4.39 41-17 41H24a23.94 23.94 0 01-24-24V344c0-21.4 25.89-32.1 41-17l36.19 36.2L184.46 256 77.18 148.7 41 185c-15.1 15.1-41 4.4-41-17V56a23.94 23.94 0 0124-24h112c21.39 0 32.09 25.9 17 41l-36.2 36.2L224 216.4l107.23-107.3L295 73c-15.09-15.1-4.39-41 17-41h112a23.94 23.94 0 0124 24v112c0 21.4-25.89 32.1-41 17l-36.19-36.2L263.54 256l107.28 107.3L407 327.1c15.1-15.2 41-4.5 41 16.9z"></path>
         </svg>
     </div>
 </template>
@@ -17,8 +17,10 @@
             return{
                 svg_div_style:{
                     width:"100px",
-                    height:"25px",
-                    backgroundColor:"pink",
+                    height:"28px",
+                    // backgroundColor:"pink",
+                    display:"flex",
+                    justifyContent: "flex-start", /* 水平起点对齐 */
                 },
                 pull_svg_style:{
                     //下拉图标svg的style
@@ -29,7 +31,9 @@
                     borderRadius:"5px",
                     position:"relative",
                     top:"0px",
-                    border :`1px solid ${this.$root.$data.color.font}`
+                    border :`1px solid ${this.$root.$data.color.font}`,
+                    fill:`${this.$root.$data.color.font}`,
+                    marginRight:"5px"
                     
                 },
             }

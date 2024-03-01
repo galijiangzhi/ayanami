@@ -27,15 +27,14 @@
         data(){
             return{
                 theme_style:{
-                    height:"67px",
-                    width:"600px"
-                },
-                theme_style:{
                     height:"50px",
+                    width:"500PX",
                     // backgroundColor:"black",
                     display:"flex",
                     flexDirection:"row",
-                    justifyContent:"space_between"
+                    justifyContent:"space_between",
+                    
+                    borderTopLeftRadius:"10px"
                 },
                 theme_1_style:{
                     height:"46px",
@@ -60,7 +59,7 @@
                 itemsize_style:{
                     width:"93px",
                     height:"51px",
-                    backgroundColor:"red",
+                    // backgroundColor:"red",
                     marginLeft:"10px"
                 }
             }

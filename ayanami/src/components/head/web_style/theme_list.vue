@@ -67,6 +67,9 @@
             };
         },
         methods:{
+            selectOption(option){
+                this.selectedOption = option
+            },
             toggleDropdown(){
                 this.isOpen = !this.isOpen;
             },

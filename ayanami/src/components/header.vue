@@ -12,13 +12,16 @@
         <div class="header_web_style" :style="style_style">
             <web_Style />
         </div>
+        <div>
+            <Search />
+        </div>
     </div>
 </template>
 <script>
     import Logo from './head/logo.vue'
     import Index from './head/index.vue'
     import web_Style from './head/web_style.vue'
-import Head from './head/index.vue';
+    import Search from './head/search.vue'
     export default{
         data(){
             return{
@@ -49,8 +52,8 @@ import Head from './head/index.vue';
         components:{
             Logo,
             Index,
-            Head,
-            web_Style
+            web_Style,
+            Search,     
         }
     }
 </script>
