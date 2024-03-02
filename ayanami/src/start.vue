@@ -9,6 +9,15 @@ export default {
         height:"100vh",
         width:"100%",
         backgroundColor:"#462a5b"
+      },
+      item_style:{
+        height:"auto",
+        width:"100vw",
+        backgroundColor:"red",
+        position:"absolute",
+        top:"160px",
+        left:"0px",
+        display:"flex"
       }
     }
   },
@@ -25,7 +34,7 @@ export default {
   </div>
   <div :class="item_class" :style="item_style">
     <Item />
-  </div>
+  </div>                                                                                                                                                                                                                                                                                                                             
 </template>
 <style>
 </style>
