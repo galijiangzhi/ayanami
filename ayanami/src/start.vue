@@ -13,7 +13,7 @@ export default {
       item_style:{
         height:"auto",
         width:"100vw",
-        backgroundColor:"red",
+        // backgroundColor:"red",
         position:"absolute",
         top:"160px",
         left:"0px",
