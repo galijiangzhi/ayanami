@@ -18,13 +18,13 @@ export default {
         top:"160px",
         left:"0px",
         display:"flex"
-      }
+      },
     }
   },
-  components: {
+  components:{
     Header,
     Item,
-}
+  }
 }
 </script>   
 

@@ -5,7 +5,7 @@
             <label :style="head_label_style">MODE ONE</label>
         </div>
         <div :style="item_style">
-            <Option v-for="item in mode_one" :key="item" />
+            <Option v-for="item in mode_one" :key="item" :url="item"/>
         </div>
     </div>
 </template>
@@ -16,9 +16,9 @@
             return{
                 windowWidth: window.innerWidth,
                 root_style:{
-                    width:"800px",
+                    width:"1000px",
                     minHeight:"130px",
-                    minWidth: "800px",
+                    minWidth: "calc(67% - 20px)",
                     borderRadius:"5px",
                     display:'flex',
                     backgroundColor:`${this.$root.$data.color.font}`,
@@ -41,7 +41,9 @@
                     width:"calc(100% - 20px)",
                     marginBottom:"10px",
                     backgroundColor:"yellow",
-                    display:"flex"
+                    display:"flex",
+                    flexWrap:"wrap",
+                    justifyContent:"flex-start"
                 },
                 head_svg_style:{
                     height:"30px",
@@ -55,8 +57,7 @@
                 svg_color:{
                     fill:`${this.$root.$data.color.head}`
                 },
-                mode_one:['11111',"22222",'11111',"22222",'11111',"22222",'11111',"22222",]
-    
+                mode_one:['bilibili.com',"w3school",'github',"gitee",'csdn',"bokeyuan",'菜鸟教程',"莫大社区",]
             }
         },
         created() {
@@ -79,7 +80,7 @@
                 this.$data.root_style.minWidth="600px"
             },
             yourFunctionUp() {
-                this.$data.root_style.minWidth="800px"
+                this.$data.root_style.minWidth="calc(67% - 20px)"
             },
         },
         components:{

@@ -12,7 +12,7 @@
                 root_style:{
                     display:'flex',
                     backgroundColor:`${this.$root.$data.color.font}`,
-                    width: "calc(33.33% - 100px)",
+                    width: "calc(33.33% - 20px)",
                     minWidth:"400px",
                     flex:"1",
                     margin: "10px"
