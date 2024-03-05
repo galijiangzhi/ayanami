@@ -2,9 +2,7 @@
     <div  :style="item_style">
         <Item1 />
         <Item2 />
-        <Item2 />
-        <Item2 />
-        <Item2 />
+
     </div>
     
 </template>

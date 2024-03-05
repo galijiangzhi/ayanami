@@ -13,11 +13,13 @@
       return {
         option_style: {
           height: "50px",
-          width: "calc(20% - 20px)",
+          width: "calc(50% - 20px)",
+          minWidth:"160px",
           backgroundColor:`${this.$root.$data.color.background}`,
           margin: "10px",
           boxSizing: "border-box",
           display:"flex",
+          flex:"1",
           borderRadius:"5px"
         },
         img_style:{

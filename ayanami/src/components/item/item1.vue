@@ -20,7 +20,6 @@
                     minHeight:"130px",
                     minWidth: "calc(67% - 20px)",
                     borderRadius:"5px",
-                    display:'flex',
                     backgroundColor:`${this.$root.$data.color.font}`,
                     flex:"1",
                     margin: "10px",
@@ -40,7 +39,7 @@
                     flex:"1",
                     width:"calc(100% - 20px)",
                     marginBottom:"10px",
-                    backgroundColor:"yellow",
+                    backgroundColor:`${this.$root.$data.color.background_b}`,
                     display:"flex",
                     flexWrap:"wrap",
                     justifyContent:"flex-start"
@@ -57,7 +56,9 @@
                 svg_color:{
                     fill:`${this.$root.$data.color.head}`
                 },
-                mode_one:['bilibili.com',"w3school",'github',"gitee",'csdn',"bokeyuan",'菜鸟教程',"莫大社区",]
+                mode_one:['https://www.bilibili.com',"https://www.w3school.com.cn","https://github.com/","https://gitee.com/","https://www.cnblogs.com/","https://www.csdn.net/","https://modelscope.cn/home","https://www.oschina.net/"]
+                // mode_one:["https://www.cnblogs.com/"]
+            
             }
         },
         created() {
@@ -73,7 +74,7 @@
                     // 当窗口宽度小于768时执行你的函数
                 } else {
                     this.yourFunctionUp();
-                    // 当窗口宽度大于等于768时执行你的函数
+                    // 当窗口宽度大于等于768时执行你的函数,
                 }
             },
             yourFunctionDown() {
@@ -81,7 +82,7 @@
             },
             yourFunctionUp() {
                 this.$data.root_style.minWidth="calc(67% - 20px)"
-            },
+            }
         },
         components:{
             Option,
