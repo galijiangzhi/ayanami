@@ -74,7 +74,7 @@
     },
     props: ["url"],
     mounted() {
-      axios.get('http://192.168.31.100:42001/url_information', {
+      axios.get('http://www.asuka.sanyueyu.top/url_information', {
         params: {
           url: this.url,
         },
