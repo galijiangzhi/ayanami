@@ -20,7 +20,7 @@ def get_title_and_favicon(url):
         if "svg" not in favicon:
             return title,favicon
         else:
-            if "http://" not in favicon
+            if "http://" not in favicon:
                 favicon = favicon.replace("//","https://")
                 # print(f"修改之后的favicon为{favicon}")
             svg = requests.get(favicon)
