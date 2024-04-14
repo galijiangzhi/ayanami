@@ -14,6 +14,8 @@ export default {
       }
     }
   },
+  mounted() {
+  },
   components: {
     Start
   }

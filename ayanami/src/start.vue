@@ -8,7 +8,8 @@ export default {
       header_style:{
         height:"100vh",
         width:"100%",
-        backgroundColor:"#462a5b"
+        backgroundColor:"#462a5b",
+    
       },
       item_style:{
         height:"auto",
@@ -20,7 +21,8 @@ export default {
         display:"flex"
       },
     }
-  },
+  },  
+
   components:{
     Header,
     Item,
@@ -34,7 +36,7 @@ export default {
   </div>
   <div :class="item_class" :style="item_style">
     <Item />
-  </div>                                                                                                                                                                                                                                                                                                                             
+  </div>                                                                                                                                                                                                                                                                                                                        
 </template>
 <style>
 </style>
