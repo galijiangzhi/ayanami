@@ -1,7 +1,7 @@
 <template>
     <div :style="option_style">
       <h1 :style="h1_style">{{ responseData.title }}</h1>
-      <input type="text" :style="input_st">
+      <input type="text" :style="input_st" @keydown.enter="handleEnter">
     </div>
   </template>
   
@@ -33,7 +33,7 @@
           display:"flex"
         },
         h1_style:{
-          fontSize:"12px",
+          fontSize:"15px",
           height:"100%",
           width:"70px",
         //   background:"red",
@@ -55,11 +55,27 @@
             border:"0px"
         },
         responseData: {
-          title:this.url
+          title:this.tit,
+          url_a:this.url
         },
-        isimg:true
       };
     },
-    props: ["url"]
+    props: ["url","tit"],
+    methods:{
+      handleEnter(event){
+        if (event.key === 'Enter'){
+          var userInput = event.target.value;
+          // yolov5
+          // console.log(userInput)
+          // console.log(this.responseData.url_a)
+          var url = this.responseData.url_a + userInput
+          // https://www.baidu.com/s?wd=yolov5
+
+          console.log(url)
+          window.open(url,'_blank');
+          event.target.value = '';
+        }
+      }
+    }
 }  
   </script>

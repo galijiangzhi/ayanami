@@ -1,20 +1,20 @@
 <template>
     <div  :style="item_style">
         <!-- MOD1 -->
-        <Item1 v-if="item_module1.type === '1'"/>
-        <Item3 v-else-if="item_module1.type === '3'"/>
+        <Item1 v-if="item_module1.type === '1'" :data="item_module1.data"/>
+        <Item3 v-else-if="item_module1.type === '3'" :data="item_module1.data"/>
         <!-- MOD2 -->
-        <Item2 v-if="item_module2.type === '2'"/>
+        <Item2 v-if="item_module2.type === '2'" :data="item_module2.data"/>
         <!-- MOD3 -->
-        <Item1 v-if="item_module3.type === '1'"/>
-        <Item3 v-else-if="item_module3.type === '3'"/>
+        <Item1 v-if="item_module3.type === '1'" :data="item_module3.data"/>
+        <Item3 v-else-if="item_module3.type === '3'" :data="item_module3.data"/>
         <!-- MOD4 -->
-        <Item2 v-if="item_module4.type === '2'"/>
+        <Item2 v-if="item_module4.type === '2'" :data="item_module4.data"/>
         <!-- MOD5 -->
-        <Item1 v-if="item_module5.type === '1'"/>
-        <Item3 v-else-if="item_module5.type === '3'"/>
+        <Item1 v-if="item_module5.type === '1'" :data="item_module5.data"/>
+        <Item3 v-else-if="item_module5.type === '3'" :data="item_module5.data"/>
         <!-- MOD6 -->
-        <Item2 v-if="item_module6.type === '2'"/>
+        <Item2 v-if="item_module6.type === '2'" :data="item_module6.data"/>
     </div>
     
 </template>
@@ -64,17 +64,20 @@
         methods:{
             get_module:function(mod,data){
                 mod.type = data.split("|||")[0].toString();
+                mod.data = data.split("|||")[1].toString();
+                // console.log(mod.data)
                 // mod.data = data.split("|||")[1].toString();
             }
         },
-        mounted(){
+        created(){
                 // 获取整个地址栏信息
             const fullUrl = window.location.href;
             // 使用split方法将地址栏信息以斜杠分割成数组，并获取最后一个元素
             const segments = fullUrl.split('/');
             this.id = segments[segments.length - 1]; // 将最后一个元素赋值给id
             console.log(this.id); // 输出id的值
-            const url = "http://127.0.0.1:42001/get_data?id=" + this.id; // 添加斜杠以连接地址和ID
+            const url = "http://www.asuka.sanyueyu.top//get_data?id=" + this.id; // 添加斜杠以连接地址和ID
+          // const url = "http://127.0.0.1:42001/get_data?id=" + this.id; // 添加斜杠以连接地址和ID
             console.log(url); // 注意这里是url而不是urll
             fetch(url)
             .then(response =>{

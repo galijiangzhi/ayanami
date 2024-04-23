@@ -5,7 +5,7 @@
             <label :style="head_label_style">MODE ONE</label>
         </div>
         <div :style="item_style">
-            <Option v-for="item in mode_one" :key="item" :url="item"/>
+            <Option v-for="item in item1_mode_one" :key="item" :url="item"/>
         </div>
     </div>
 </template>
@@ -56,8 +56,10 @@
                 svg_color:{
                     fill:`${this.$root.$data.color.head}`
                 },
-                mode_one:['https://www.bilibili.com',"https://www.w3school.com.cn","https://github.com/","https://gitee.com/","https://www.cnblogs.com/","https://www.csdn.net/","https://modelscope.cn/home","https://www.oschina.net/"]
+                // mode_one:['https://www.bilibili.com',"https://www.w3school.com.cn","https://github.com/","https://gitee.com/","https://www.cnblogs.com/","https://www.csdn.net/","https://modelscope.cn/home","https://www.oschina.net/"]
                 // mode_one:["https://www.cnblogs.com/"]
+                item1_mode_data:this.data,
+                item1_mode_one:[]
             
             }
         },
@@ -86,6 +88,15 @@
         },
         components:{
             Option,
+        },
+        props:["data"],
+        mounted() {
+          console.log(this.item1_mode_data)
+          let data_list = this.item1_mode_data.split("||");
+            for(let i = 0 ; i< data_list.length;i++){
+              // console.log(data_list[i].split("|")[0])
+              this.item1_mode_one.push(data_list[i]);
+            }
         }
     }
 </script>

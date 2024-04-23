@@ -1,7 +1,8 @@
 <script>
 import Start from './start.vue'
-
-
+// 1 import
+// 2 components
+// 3 template
 export default {
   data(){
     return{

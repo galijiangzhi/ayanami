@@ -36,7 +36,7 @@ export default {
   </div>
   <div :class="item_class" :style="item_style">
     <Item />
-  </div>                                                                                                                                                                                                                                                                                                                        
+  </div>
 </template>
 <style>
 </style>

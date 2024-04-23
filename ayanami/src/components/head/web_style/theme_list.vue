@@ -30,7 +30,8 @@
                     display:"flex",
                     alignItems:"center",
                     justifyContent: "flex-start" /* 水平起点对齐 */,
-                    fontFamily: 'Inconsolata, Georgia, sans-serif'
+                    fontFamily: 'Inconsolata, Georgia, sans-serif',
+                    zIndex: "999"
                 },
                 dropdown_menu_style:{
                     //下拉列表的style
@@ -41,14 +42,17 @@
                     border:`1px solid ${this.$root.$data.color.font}`,
                     borderRadius:"5px",
                     marginRight:"100px",
-                    fontFamily: 'Inconsolata, Georgia, sans-serif'
+                    fontFamily: 'Inconsolata, Georgia, sans-serif',
+                    zIndex: "999"
                     
                 },
                 option_style:{
                     //具体选项的div
                     padding:"5px",
                     color:`${this.$root.$data.color.font}`,
-                    cursor:"pointer"
+                    background:`${this.$root.$data.color.background}`,
+                    cursor:"pointer",
+                    zIndex: "999"
                 },
                 pull_svg_style:{
                     //下拉图标svg的style
@@ -58,6 +62,7 @@
                     position:"relative",
                     left:"100px",
                     top:"-23px",
+                    zIndex: "999"
                     
                 },
                 zhanwei_div_style:{

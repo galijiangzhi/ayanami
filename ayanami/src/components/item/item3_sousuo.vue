@@ -5,7 +5,7 @@
             <label :style="head_label_style">MODE ONE</label>
         </div>
         <div :style="item_style">
-            <Sousuo v-for="item in mode_one" :key="item" :url="item"/>
+            <Sousuo v-for="(item,index) in mode_one" :key="index" :tit="item" :url="mode_tow[index]"/>
         </div>
     </div>
 </template>
@@ -56,34 +56,49 @@
                 svg_color:{
                     fill:`${this.$root.$data.color.head}`
                 },
-                mode_one:['百度',"谷歌","必应","github","gitee","csdn"]
-                // mode_one:["https://www.cnblogs.com/"]
-            
+                mode_data:this.data,
+                mode_one:[],
+                mode_tow:[],
+                // mode_one:['百度',"谷歌","必应","github","gitee","csdn"],
+                // mode_tow:["https://www.baidu.com/s?wd=","https://www.google.com/search?q=","https://cn.bing.com/search?q=","https://github.com/search?q=","https://search.gitee.com/?q=","https://so.csdn.net/so/search?&t=&u==undefined&q="]
             }
         },
         created() {
             window.addEventListener('resize', this.handleWindowSizeChange);
             // 监听窗口大小变化
         },
-        methods:{
-            handleWindowSizeChange() {
-                this.windowWidth = window.innerWidth;
-                // 更新窗口宽度
-                if (this.windowWidth < 1000) {
-                    this.yourFunctionDown();
-                    // 当窗口宽度小于768时执行你的函数
-                } else {
-                    this.yourFunctionUp();
-                    // 当窗口宽度大于等于768时执行你的函数,
-                }
-            },
-            yourFunctionDown() {
-                this.$data.root_style.minWidth="600px"
-            },
-            yourFunctionUp() {
-                this.$data.root_style.minWidth="calc(67% - 20px)"
+        mounted() {
+            let data_list = this.mode_data.split("||");
+            for(let i = 0 ; i< data_list.length;i++){
+              console.log(i)
+              // console.log(data_list[i].split("|")[0])
+              this.mode_one.push(data_list[i].split("|")[0]);
+              this.mode_tow.push(data_list[i].split("|")[1]);
+              console.log(this.mode_one);
+              console.log(this.mode_tow);
             }
+
         },
+        methods:{
+              handleWindowSizeChange() {
+                  this.windowWidth = window.innerWidth;
+                  // 更新窗口宽度
+                  if (this.windowWidth < 1000) {
+                      this.yourFunctionDown();
+                      // 当窗口宽度小于768时执行你的函数
+                  } else {
+                      this.yourFunctionUp();
+                      // 当窗口宽度大于等于768时执行你的函数,
+                  }
+              },
+              yourFunctionDown() {
+                  this.$data.root_style.minWidth="600px"
+              },
+              yourFunctionUp() {
+                  this.$data.root_style.minWidth="calc(67% - 20px)"
+              }
+        },
+        props:["data"],
         components:{
             Sousuo,
         }
