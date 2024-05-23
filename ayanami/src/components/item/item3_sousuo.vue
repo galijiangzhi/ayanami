@@ -26,7 +26,7 @@
                     flexShrink:"1" ,
                     display:"flex",
                     flexDirection:"column"
-                },
+                },xx
                 head_style:{
                     height:"40px",
                     width:"100%",
