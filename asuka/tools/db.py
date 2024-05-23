@@ -3,7 +3,7 @@ import pymysql
 # 定义一个函数来执行查询
 def execute_query(reque_data):
     # 连接到数据库
-    conn = pymysql.connect(host='192.168.31.100', user='root', password='viekk2423', database='eva')
+    conn = pymysql.connect(host='192.168.0.100', user='root', password='viekk2423', database='eva')
     cursor = conn.cursor()
 
     # 执行查询
