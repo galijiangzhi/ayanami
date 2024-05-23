@@ -72,7 +72,7 @@
     },
     props: ["url"],
     mounted() {
-      axios.get('http://www.asuka.sanyueyu.top//url_information', {
+      axios.get('http://www.evaasuka.sanyueyu.top//url_information', {
         params: {
           url: this.url,
         },

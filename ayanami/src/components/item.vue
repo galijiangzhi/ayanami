@@ -76,7 +76,7 @@
             const segments = fullUrl.split('/');
             this.id = segments[segments.length - 1]; // 将最后一个元素赋值给id
             console.log(this.id); // 输出id的值
-            const url = "http://www.asuka.sanyueyu.top//get_data?id=" + this.id; // 添加斜杠以连接地址和ID
+            const url = "http://www.evaasuka.sanyueyu.top//get_data?id=" + this.id; // 添加斜杠以连接地址和ID
           // const url = "http://127.0.0.1:42001/get_data?id=" + this.id; // 添加斜杠以连接地址和ID
             console.log(url); // 注意这里是url而不是urll
             fetch(url)
